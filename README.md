@@ -7,13 +7,19 @@ Instalasi desktop **XFCE4** + **Termux-X11** di Termux melalui script interaktif
 
 ## Instalasi
 
-Langsung jalankan script dari branch `xfce` (tanpa unduh ke file):
+Via curl (langsung jalankan):
 
 ```bash
 curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/xfce/setup.sh | bash
 ```
 
-> **Note:** URL di atas menunjuk ke branch `xfce`, bukan `main`.
+Via clone (lokal):
+
+```bash
+git clone -b xfce https://github.com/nt-portal/TermuxX11-build.git
+cd TermuxX11-build
+bash setup.sh
+```
 
 ## Menu
 
