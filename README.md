@@ -1,75 +1,70 @@
-#Termux X11 Build — Edisi XFCE
+# Termux X11 Build — Edisi IceWM
 
-Instalasi desktop **XFCE4** + **Termux-X11** di Termux melalui script interaktif.
+Instalasi desktop **IceWM** + **Termux-X11** di Termux melalui script interaktif.
 
 - **Aktor:** Tarno
-- **Branch:** `xfce`
+- **Branch:** `icewm`
 
 ## Instalasi
 
-Langsung jalankan script dari branch `xfce` (tanpa unduh ke file):
-
 ```bash
-curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/xfce/setup.sh | bash
+curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/icewm/setup.sh | bash
 ```
-
-> **Note:** URL di atas menunjuk ke branch `xfce`, bukan `main`.
 
 ## Menu
 
 | Opsi | Fungsi |
 |------|--------|
-| `[1]` | Install — update paket, pasang X11 + XFCE, buat launcher `desk` |
-| `[2]` | Remove — hapus semua paket X11 + launcher `desk` |
-| `[3]` | Help — panduan gestur, pintasan, dan daftar paket |
+| `[1]` | Install — update paket, pasang X11 + IceWM + aplikasi |
+| `[2]` | Config — setup dotfiles IceWM, menu, toolbar, shortcut, mimeapps |
+| `[3]` | Remove — hapus semua paket X11 + config |
+| `[4]` | Help — panduan gestur, pintasan, dan daftar paket |
 | `[*]` | Exit |
 
 ## Paket yang dipasang
 
-`termux-x11-nightly`, `xfce4`, `xfce4-goodies`, `dbus`, `pulseaudio`,
-`pavucontrol`, `ffmpeg`, `thunar`, `thunar-archive-plugin`, `file-roller`,
-`xarchiver`, `ristretto`, `parole`, `mousepad`, `lxtask`, `xfce4-terminal`,
-`xfce4-notifyd`, `xfce4-pulseaudio-plugin`, `xfce4-whiskermenu-plugin`,
-`xfce4-taskmanager`, `gvfs`, `termux-api`, `neovim`
+`termux-x11-nightly`, `icewm`, `st`, `pcmanfm`, `firefox`, `mousepad`,
+`ristretto`, `parole`, `lxtask`, `xvkbd`, `pulseaudio`, `ffmpeg`
 
 ## Cara pakai
 
 ```bash
-desk        # jalankan desktop XFCE
+# 1. Jalankan setup
+bash setup.sh
+
+# 2. Pilih [1] Install, lalu [2] Config
+
+# 3. Jalankan desktop
+desk
 ```
 
-- **Display:** `:1`
+- **Display:** `:0`
 - **Audio:** `pulseaudio --start` (otomatis dijalankan oleh `desk`)
 
-### Panduan gestur
+### Aplikasi
 
-| Aksi | Gestur |
-|------|--------|
-| Gerakan kursor | usap satu jari |
-| Klik kiri | ketuk satu jari |
-| Klik dua kali | ketuk dua kali satu jari |
-| Seret / Pilih | tekan lama satu jari lalu usap |
-| Menu klik kanan | ketuk dua jari |
-| Gulir halaman | usap dua jari |
-| Tampilkan keyboard | gestur kembali |
-| Keluar X11 | gestur layar utama |
+| Aplikasi | Fungsi |
+|----------|--------|
+| ST | Terminal |
+| Firefox | Browser |
+| PCManFM | File Manager |
+| Mousepad | Text Editor |
+| Ristretto | Image Viewer |
+| Parole | Media Player |
+| LXTask | Task Manager |
+| XVKBD | Virtual Keyboard |
 
 ### Pintasan tombol
 
 | Tombol | Fungsi |
 |--------|--------|
 | `Alt+Ctrl+t` | Terminal |
-| `Alt+Ctrl+x` | Firefox (jika terpasang) |
+| `Alt+Ctrl+x` | Firefox |
 | `Alt+Ctrl+k` | Task Manager |
 
 ## Uninstall
 
-Jalankan script lagi lalu pilih `[2] Remove`, atau hapus manual:
-
-```bash
-rm -f $PREFIX/bin/desk
-pkg uninstall -y xfce4 xfce4-goodies termux-x11-nightly x11-repo
-```
+Jalankan script lagi lalu pilih `[3] Remove`.
 
 ## Lisensi
 
