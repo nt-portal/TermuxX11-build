@@ -13,6 +13,7 @@
 [![Bash](https://img.shields.io/badge/BASH-SCRIPT-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](setup.sh)
 [![Termux](https://img.shields.io/badge/TERMUX-ANDROID-black?style=for-the-badge&logo=android&logoColor=3DDC84)](https://termux.dev)
 [![XFCE](https://img.shields.io/badge/XFCE-DESKTOP-2284F2?style=for-the-badge&logo=xfce&logoColor=white)](https://xfce.org)
+[![IceWM](https://img.shields.io/badge/ICEWM-DESKTOP-888888?style=for-the-badge&logo=linux&logoColor=white)](https://ice-wm.org)
 [![Maintained](https://img.shields.io/badge/MAINTAINED-YES-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/nt-portal/TermuxX11-build)
 
 </div>
@@ -30,8 +31,9 @@ Setiap edisi desktop environment disimpan di **branch terpisah**. Branch `main` 
 | Branch | Desktop | Status | Install |
 |--------|---------|--------|---------|
 | [`xfce`](https://github.com/nt-portal/TermuxX11-build/tree/xfce) | XFCE4 | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/xfce/setup.sh \| bash` |
+| [`icewm`](https://github.com/nt-portal/TermuxX11-build/tree/icewm) | IceWM | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/icewm/setup.sh \| bash` |
 
-> Edisi lain (KDE, LXQt, dll) bisa ditambahkan di branch baru.
+> Edisi lain bisa ditambahkan di branch baru (nama branch = nama desktop).
 
 ## Cara Install
 
@@ -57,9 +59,9 @@ Setiap edisi desktop environment disimpan di **branch terpisah**. Branch `main` 
 ## Struktur Branch
 
 ```
-main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING)
+main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING, ISSUE)
 ├── xfce    ← edisi XFCE4
-├── kde     ← (rencana)
+├── icewm   ← edisi IceWM
 └── ...     ← edisi lain
 ```
 
@@ -67,7 +69,11 @@ main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING)
 
 Kontribusi sangat diterima! Baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk panduan lengkap.
 
-**Penting:** Branch `main` hanya dokumentasi dan dikelola oleh admin repository saja. Semua kontribusi kode harus ditujukan ke branch edisi yang sesuai (misal `xfce`).
+**Penting:** Branch `main` hanya dokumentasi dan dikelola oleh admin repository saja. Semua kontribusi kode harus ditujukan ke branch edisi yang sesuai (misal `xfce`, `icewm`).
+
+## Melaporkan Masalah
+
+Temukan bug atau ada saran? Baca [ISSUE.md](ISSUE.md) untuk panduan melaporkan masalah.
 
 ## Aktor
 
