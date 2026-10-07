@@ -11,7 +11,7 @@ github_remote() {
 }
 
 pause() {
-  read -r -p "[Enter] kembali ke menu" _
+  read -r -p "[Enter] kembali ke menu" _ </dev/tty
   echo
 }
 
@@ -176,7 +176,7 @@ EOF
 
 remove_packages() {
   printf "Hapus semua paket X11? [y/N] "
-  read -r answer
+  read -r answer </dev/tty
   case "$answer" in
   y | Y | ya | Ya) ;;
   *)
@@ -273,7 +273,7 @@ $(separator)"
 main() {
   while true; do
     print_banner
-    read -s -n1 key
+    read -s -n1 key </dev/tty
     echo
 
     case "$key" in

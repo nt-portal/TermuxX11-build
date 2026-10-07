@@ -7,8 +7,18 @@ Instalasi desktop **IceWM** + **Termux-X11** di Termux melalui script interaktif
 
 ## Instalasi
 
+Via curl (langsung jalankan):
+
 ```bash
 curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/icewm/setup.sh | bash
+```
+
+Via clone (lokal):
+
+```bash
+git clone -b icewm https://github.com/nt-portal/TermuxX11-build.git
+cd TermuxX11-build
+bash setup.sh
 ```
 
 ## Menu
