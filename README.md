@@ -1,4 +1,4 @@
-#Termux X11 Build — Edisi XFCE
+# Termux X11 Build — Edisi XFCE
 
 Instalasi desktop **XFCE4** + **Termux-X11** di Termux melalui script interaktif.
 
