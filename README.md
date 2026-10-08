@@ -87,9 +87,12 @@ Kontribusi sangat diterima! Baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk pandua
 
 Temukan bug atau ada saran? Baca [ISSUE.md](ISSUE.md) untuk panduan melaporkan masalah.
 
-## Aktor
+## Kontributor
+Terima kasih kepada semua yang telah berkontributor pada TermuxX11-build.
 
-**Tarno** — [@nt-portal](https://github.com/nt-portal)
+<a href="https://github.com/nt-portal/TermuxX11-build/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nt-portal/TermuxX11-build" />
+</a>
 
 ## Lisensi
 
