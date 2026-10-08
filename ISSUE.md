@@ -63,6 +63,10 @@ Lalu tempel isi `/tmp/debug.log` ke issue.
 | `question` | Pertanyaan tentang cara pakai |
 | `xfce` | Masalah khusus edisi XFCE |
 | `icewm` | Masalah khusus edisi IceWM |
+| `mate` | Masalah khusus edisi MATE |
+| `lxqt` | Masalah khusus edisi LXQt |
+| `openbox` | Masalah khusus edisi Openbox |
+| `kde` | Masalah khusus edisi KDE Plasma |
 
 ## Yang Bukan Bug
 
