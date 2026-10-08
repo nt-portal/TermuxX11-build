@@ -1,84 +1,74 @@
-<div align="center">
+# Termux X11 Build — Edisi Openbox
 
-# TermuxX11-build
+Instalasi Window Manager **Openbox** + **Termux-X11** di Termux melalui script interaktif.
 
-**Desktop environment installer untuk Termux via script interaktif.**
+- **Aktor:** Tarno
+- **Branch:** `openbox`
 
-[![License](https://img.shields.io/github/license/nt-portal/TermuxX11-build?style=for-the-badge&logo=gnu&logoColor=white&color=blue)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/nt-portal/TermuxX11-build?style=for-the-badge&logo=github&logoColor=white&color=gold)](https://github.com/nt-portal/TermuxX11-build/stargazers)
-[![Forks](https://img.shields.io/github/forks/nt-portal/TermuxX11-build?style=for-the-badge&logo=git&logoColor=white&color=green)](https://github.com/nt-portal/TermuxX11-build/network)
-[![Issues](https://img.shields.io/github/issues/nt-portal/TermuxX11-build?style=for-the-badge&logo=github&logoColor=white&color=red)](https://github.com/nt-portal/TermuxX11-build/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/nt-portal/TermuxX11-build?style=for-the-badge&logo=git&logoColor=white&color=purple)](https://github.com/nt-portal/TermuxX11-build/commits)
+## Instalasi
 
-[![Bash](https://img.shields.io/badge/BASH-SCRIPT-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](setup.sh)
-[![Termux](https://img.shields.io/badge/TERMUX-ANDROID-black?style=for-the-badge&logo=android&logoColor=3DDC84)](https://termux.dev)
-[![XFCE](https://img.shields.io/badge/XFCE-DESKTOP-2284F2?style=for-the-badge&logo=xfce&logoColor=white)](https://xfce.org)
-[![IceWM](https://img.shields.io/badge/ICEWM-DESKTOP-888888?style=for-the-badge&logo=linux&logoColor=white)](https://ice-wm.org)
-[![Maintained](https://img.shields.io/badge/MAINTAINED-YES-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/nt-portal/TermuxX11-build)
+Via curl (langsung jalankan):
 
-</div>
-
----
-
-## Apa ini?
-
-**TermuxX11-build** adalah kumpulan script bash yang mengotomasi instalasi desktop environment di [Termux](https://termux.dev) menggunakan [Termux-X11](https://github.com/nicetomeetyou/termux-x11). Cukup jalankan satu perintah — pilih menu — desktop siap pakai.
-
-Setiap edisi desktop environment disimpan di **branch terpisah**. Branch `main` hanya berisi dokumentasi.
-
-## Edisi Tersedia
-
-| Branch | Desktop | Status | Install |
-|--------|---------|--------|---------|
-| [`xfce`](https://github.com/nt-portal/TermuxX11-build/tree/xfce) | XFCE4 | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/xfce/setup.sh \| bash` |
-| [`icewm`](https://github.com/nt-portal/TermuxX11-build/tree/icewm) | IceWM | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/icewm/setup.sh \| bash` |
-
-> Edisi lain bisa ditambahkan di branch baru (nama branch = nama desktop).
-
-## Cara Install
-
-1. Buka **Termux**
-2. Jalankan perintah sesuai edisi yang dipilih (lihat tabel di atas)
-3. Pilih `[1] Install` dari menu interaktif
-4. Selesai — jalankan desktop dengan perintah `desk`
-
-## Fitur
-
-- 🎨 Menu interaktif berwarna di terminal
-- 📦 Install & uninstall otomatis satu klik
-- 🖥️ Launcher `desk` untuk menjalankan desktop
-- 🔊 PulseAudio otomatis
-- 📖 Panduan gestur & pintasan built-in (`[3] Help`)
-
-## Prasyarat
-
-- [Termux](https://f-droid.org/en/packages/com.termux/) (F-Droid)
-- [Termux:X11](https://github.com/nicetomeetyou/termux-x11/releases) (APK)
-- [Termux:API](https://f-droid.org/en/packages/com.termux.api/) (opsional)
-
-## Struktur Branch
-
-```
-main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING, ISSUE)
-├── xfce    ← edisi XFCE4
-├── icewm   ← edisi IceWM
-└── ...     ← edisi lain
+```bash
+curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/openbox/setup.sh | bash
 ```
 
-## Kontribusi
+Via clone (lokal):
 
-Kontribusi sangat diterima! Baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk panduan lengkap.
+```bash
+git clone -b openbox https://github.com/nt-portal/TermuxX11-build.git
+cd TermuxX11-build
+bash setup.sh
+```
 
-**Penting:** Branch `main` hanya dokumentasi dan dikelola oleh admin repository saja. Semua kontribusi kode harus ditujukan ke branch edisi yang sesuai (misal `xfce`, `icewm`).
+## Menu
 
-## Melaporkan Masalah
+| Opsi | Fungsi |
+|------|--------|
+| `[1]` | Install — update paket, pasang X11 + Openbox, buat launcher `desk` |
+| `[2]` | Remove — hapus semua paket X11 + launcher `desk` |
+| `[3]` | Help — panduan gestur, pintasan, dan daftar paket |
+| `[*]` | Exit |
 
-Temukan bug atau ada saran? Baca [ISSUE.md](ISSUE.md) untuk panduan melaporkan masalah.
+## Paket yang dipasang
 
-## Aktor
+`termux-x11-nightly`, `openbox`, `obconf`, `tint2`, `pcmanfm`, `xterm`,
+`dbus`, `pulseaudio`, `pavucontrol`, `ffmpeg`, `termux-api`, `neovim`
 
-**Tarno** — [@nt-portal](https://github.com/nt-portal)
+## Cara pakai
+
+```bash
+desk        # jalankan Openbox
+```
+
+- **Display:** `:1`
+- **Audio:** `pulseaudio --start` (otomatis dijalankan oleh `desk`)
+
+### Panduan gestur
+
+| Aksi | Gestur |
+|------|--------|
+| Gerakan kursor | usap satu jari |
+| Klik kiri | ketuk satu jari |
+| Klik dua kali | ketuk dua kali satu jari |
+| Seret / Pilih | tekan lama satu jari lalu usap |
+| Menu klik kanan | ketuk dua jari |
+| Gulir halaman | usap dua jari |
+| Tampilkan keyboard | gestur kembali |
+| Keluar X11 | gestur layar utama |
+
+### Pintasan tombol
+
+| Tombol | Fungsi |
+|--------|--------|
+| `Alt+Ctrl+t` | Terminal |
+| `Alt+Ctrl+x` | Firefox (jika terpasang) |
+| `Alt+Ctrl+k` | Task Manager |
+
+## Uninstall
+
+Jalankan script lagi lalu pilih `[2] Remove`.
 
 ## Lisensi
 
-[GNU General Public License v3.0](LICENSE)
+Lihat [LICENSE](LICENSE).
