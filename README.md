@@ -14,6 +14,10 @@
 [![Termux](https://img.shields.io/badge/TERMUX-ANDROID-black?style=for-the-badge&logo=android&logoColor=3DDC84)](https://termux.dev)
 [![XFCE](https://img.shields.io/badge/XFCE-DESKTOP-2284F2?style=for-the-badge&logo=xfce&logoColor=white)](https://xfce.org)
 [![IceWM](https://img.shields.io/badge/ICEWM-DESKTOP-888888?style=for-the-badge&logo=linux&logoColor=white)](https://ice-wm.org)
+[![MATE](https://img.shields.io/badge/MATE-DESKTOP-87A96B?style=for-the-badge&logo=linux&logoColor=white)](https://mate-desktop.org)
+[![LXQt](https://img.shields.io/badge/LXQT-DESKTOP-006699?style=for-the-badge&logo=lxqt&logoColor=white)](https://lxqt-project.org)
+[![Openbox](https://img.shields.io/badge/OPENBOX-WM-333333?style=for-the-badge&logo=linux&logoColor=white)](http://openbox.org)
+[![KDE](https://img.shields.io/badge/KDE-PLASMA-1D99F3?style=for-the-badge&logo=kde&logoColor=white)](https://kde.org)
 [![Maintained](https://img.shields.io/badge/MAINTAINED-YES-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/nt-portal/TermuxX11-build)
 
 </div>
@@ -32,6 +36,10 @@ Setiap edisi desktop environment disimpan di **branch terpisah**. Branch `main` 
 |--------|---------|--------|---------|
 | [`xfce`](https://github.com/nt-portal/TermuxX11-build/tree/xfce) | XFCE4 | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/xfce/setup.sh \| bash` |
 | [`icewm`](https://github.com/nt-portal/TermuxX11-build/tree/icewm) | IceWM | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/icewm/setup.sh \| bash` |
+| [`mate`](https://github.com/nt-portal/TermuxX11-build/tree/mate) | MATE | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/mate/setup.sh \| bash` |
+| [`lxqt`](https://github.com/nt-portal/TermuxX11-build/tree/lxqt) | LXQt | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/lxqt/setup.sh \| bash` |
+| [`openbox`](https://github.com/nt-portal/TermuxX11-build/tree/openbox) | Openbox WM | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/openbox/setup.sh \| bash` |
+| [`kde`](https://github.com/nt-portal/TermuxX11-build/tree/kde) | KDE Plasma | ✅ Aktif | `curl -sL https://raw.githubusercontent.com/nt-portal/TermuxX11-build/kde/setup.sh \| bash` |
 
 > Edisi lain bisa ditambahkan di branch baru (nama branch = nama desktop).
 
@@ -62,6 +70,10 @@ Setiap edisi desktop environment disimpan di **branch terpisah**. Branch `main` 
 main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING, ISSUE)
 ├── xfce    ← edisi XFCE4
 ├── icewm   ← edisi IceWM
+├── mate    ← edisi MATE Desktop
+├── lxqt    ← edisi LXQt Desktop
+├── openbox ← edisi Openbox WM
+├── kde     ← edisi KDE Plasma
 └── ...     ← edisi lain
 ```
 
@@ -69,7 +81,7 @@ main        ← dokumentasi saja (README, LICENSE, CONTRIBUTING, ISSUE)
 
 Kontribusi sangat diterima! Baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk panduan lengkap.
 
-**Penting:** Branch `main` hanya dokumentasi dan dikelola oleh admin repository saja. Semua kontribusi kode harus ditujukan ke branch edisi yang sesuai (misal `xfce`, `icewm`).
+**Penting:** Branch `main` hanya dokumentasi dan dikelola oleh admin repository saja. Semua kontribusi kode harus ditujukan ke branch edisi yang sesuai (misal `xfce`, `icewm`, `mate`, `lxqt`, `openbox`, `kde`).
 
 ## Melaporkan Masalah
 
